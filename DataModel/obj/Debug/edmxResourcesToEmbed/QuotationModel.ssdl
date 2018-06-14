@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestCotizacionesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cotizaciones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Cliente" Type="nvarchar" MaxLength="350" Nullable="false" />
+    <Property Name="TipoSeguro" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FormaPago" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FechaVencimiento" Type="datetime" Nullable="false" />
+    <Property Name="FechaCotizacion" Type="datetime" Nullable="false" />
+    <Property Name="Activa" Type="bit" Nullable="false" />
+    <Property Name="NumeroPoliza" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TestCotizacionesModelStoreContainer">
+    <EntitySet Name="Cotizaciones" EntityType="Self.Cotizaciones" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

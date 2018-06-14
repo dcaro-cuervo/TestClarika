@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestCotizacionesModelStoreContainer" CdmEntityContainer="TestCotizacionesEntities">
+    <EntitySetMapping Name="Cotizaciones">
+      <EntityTypeMapping TypeName="TestCotizacionesModel.Cotizaciones">
+        <MappingFragment StoreEntitySet="Cotizaciones">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="TipoSeguro" ColumnName="TipoSeguro" />
+          <ScalarProperty Name="FormaPago" ColumnName="FormaPago" />
+          <ScalarProperty Name="FechaVencimiento" ColumnName="FechaVencimiento" />
+          <ScalarProperty Name="FechaCotizacion" ColumnName="FechaCotizacion" />
+          <ScalarProperty Name="Activa" ColumnName="Activa" />
+          <ScalarProperty Name="NumeroPoliza" ColumnName="NumeroPoliza" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

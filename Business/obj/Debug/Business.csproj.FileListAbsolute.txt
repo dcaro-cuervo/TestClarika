@@ -1,0 +1,14 @@
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\Business.dll
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\Business.pdb
+C:\Projects\Clarika\TestClarika\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Projects\Clarika\TestClarika\Business\obj\Debug\Business.dll
+C:\Projects\Clarika\TestClarika\Business\obj\Debug\Business.pdb
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\AutoMapper.dll
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\DataEntity.dll
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\DataEntity.pdb
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\AutoMapper.xml
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\DataModel.dll
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\DataRepository.dll
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\DataModel.pdb
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\DataModel.dll.config
+C:\Projects\Clarika\TestClarika\Business\bin\Debug\DataRepository.pdb
