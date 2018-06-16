@@ -29,6 +29,7 @@ C:\Projects\Clarika\TestClarika\TestClarika\bin\TestClarika.dll.config
 C:\Projects\Clarika\TestClarika\TestClarika\bin\TestClarika.dll
 C:\Projects\Clarika\TestClarika\TestClarika\bin\TestClarika.pdb
 C:\Projects\Clarika\TestClarika\TestClarika\bin\Antlr3.Runtime.dll
+C:\Projects\Clarika\TestClarika\TestClarika\bin\Business.dll
 C:\Projects\Clarika\TestClarika\TestClarika\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Projects\Clarika\TestClarika\TestClarika\bin\Microsoft.AI.DependencyCollector.dll
 C:\Projects\Clarika\TestClarika\TestClarika\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -47,6 +48,11 @@ C:\Projects\Clarika\TestClarika\TestClarika\bin\System.Web.WebPages.Deployment.d
 C:\Projects\Clarika\TestClarika\TestClarika\bin\System.Web.WebPages.dll
 C:\Projects\Clarika\TestClarika\TestClarika\bin\System.Web.WebPages.Razor.dll
 C:\Projects\Clarika\TestClarika\TestClarika\bin\WebGrease.dll
+C:\Projects\Clarika\TestClarika\TestClarika\bin\DataRepository.dll
+C:\Projects\Clarika\TestClarika\TestClarika\bin\DataEntity.dll
+C:\Projects\Clarika\TestClarika\TestClarika\bin\DataModel.dll
+C:\Projects\Clarika\TestClarika\TestClarika\bin\EntityFramework.dll
+C:\Projects\Clarika\TestClarika\TestClarika\bin\Business.pdb
 C:\Projects\Clarika\TestClarika\TestClarika\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Projects\Clarika\TestClarika\TestClarika\bin\System.Web.Helpers.xml
 C:\Projects\Clarika\TestClarika\TestClarika\bin\System.Web.Mvc.xml
@@ -62,6 +68,10 @@ C:\Projects\Clarika\TestClarika\TestClarika\bin\Microsoft.AI.DependencyCollector
 C:\Projects\Clarika\TestClarika\TestClarika\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Projects\Clarika\TestClarika\TestClarika\bin\Microsoft.AI.WindowsServer.xml
 C:\Projects\Clarika\TestClarika\TestClarika\bin\Microsoft.AI.Web.xml
+C:\Projects\Clarika\TestClarika\TestClarika\bin\DataRepository.pdb
+C:\Projects\Clarika\TestClarika\TestClarika\bin\DataEntity.pdb
+C:\Projects\Clarika\TestClarika\TestClarika\bin\DataModel.pdb
+C:\Projects\Clarika\TestClarika\TestClarika\bin\DataModel.dll.config
 C:\Projects\Clarika\TestClarika\TestClarika\bin\es\System.Web.Helpers.resources.dll
 C:\Projects\Clarika\TestClarika\TestClarika\bin\es\System.Web.Mvc.resources.dll
 C:\Projects\Clarika\TestClarika\TestClarika\bin\es\System.Web.Optimization.resources.dll

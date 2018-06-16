@@ -1,5 +1,4 @@
 C:\Projects\Clarika\TestClarika\DataRepository\bin\Debug\DataRepository.dll
 C:\Projects\Clarika\TestClarika\DataRepository\bin\Debug\DataRepository.pdb
-C:\Projects\Clarika\TestClarika\DataRepository\obj\Debug\DataRepository.csprojResolveAssemblyReference.cache
 C:\Projects\Clarika\TestClarika\DataRepository\obj\Debug\DataRepository.dll
 C:\Projects\Clarika\TestClarika\DataRepository\obj\Debug\DataRepository.pdb

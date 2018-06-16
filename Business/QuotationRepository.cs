@@ -12,8 +12,23 @@ namespace Business
 {
     public class QuotationRepository : IQuotationRepository, IDisposable
     {
-        private Repository<Cotizaciones> _quotationsRepository = new Repository<Cotizaciones>(new TestCotizacionesEntities());
+        private GenericRepository<Cotizaciones> _quotationsRepository = new GenericRepository<Cotizaciones>(new TestCotizacionesEntities());
+        private readonly IMapper iMapper;
 
+        public QuotationRepository()
+        {
+            //Initialize automapper
+            MapperConfiguration config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<Quotation, Cotizaciones>();
+
+                cfg.CreateMap<Cotizaciones, Quotation>();
+
+            });
+
+            iMapper = config.CreateMapper();
+        }
+            
         #region Data Entity
 
         private void Add(Cotizaciones newQuotation)
@@ -55,31 +70,32 @@ namespace Business
 
         public void InsertQuotation(Quotation quotation)
         {
-            Cotizaciones mappedEntity = Mapper.Map<Quotation, Cotizaciones>(quotation);
+            Cotizaciones mappedEntity = iMapper.Map<Quotation, Cotizaciones>(quotation);
+            mappedEntity.FechaVencimiento = DateTime.Today.AddYears(1);
             Add(mappedEntity);
         }
 
         public void UpdateQuotation(Quotation quotation)
         {
-            Cotizaciones mappedEntity = Mapper.Map<Quotation, Cotizaciones>(quotation);
+            Cotizaciones mappedEntity = iMapper.Map<Quotation, Cotizaciones>(quotation);
             Update(mappedEntity);
         }
 
         public void DeleteQuotation(Quotation quotationToRemove)
         {
-            Cotizaciones mappedEntity = Mapper.Map<Quotation, Cotizaciones>(quotationToRemove);
+            Cotizaciones mappedEntity = iMapper.Map<Quotation, Cotizaciones>(quotationToRemove);
             Remove(mappedEntity);
         }
 
-        public IEnumerable<Quotation> GetQuotations()
+        public IEnumerable<Quotation> GetQuotations(string fieldToSearch)
         {
-            return Mapper.Map<IEnumerable<Cotizaciones>, IEnumerable<Quotation>>(GetAll());
+            return iMapper.Map<IEnumerable<Cotizaciones>, IEnumerable<Quotation>>(GetAll().Where(x => x.Cliente.ToLower().Contains(fieldToSearch.ToLower()) || x.NumeroPoliza.Contains(fieldToSearch)));
         }
 
         public Quotation GetQuotationById(int quotationId)
         {
             var query = FindById(quotationId);
-            var result = Mapper.Map<Cotizaciones, Quotation>(query);
+            var result = iMapper.Map<Cotizaciones, Quotation>(query);
 
             return result;
         }

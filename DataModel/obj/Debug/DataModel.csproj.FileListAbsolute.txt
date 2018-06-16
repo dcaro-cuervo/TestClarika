@@ -1,4 +1,3 @@
-C:\Projects\Clarika\TestClarika\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
 C:\Projects\Clarika\TestClarika\DataModel\bin\Debug\DataModel.dll.config
 C:\Projects\Clarika\TestClarika\DataModel\bin\Debug\DataModel.dll
 C:\Projects\Clarika\TestClarika\DataModel\bin\Debug\DataModel.pdb
@@ -8,5 +7,6 @@ C:\Projects\Clarika\TestClarika\DataModel\bin\Debug\EntityFramework.SqlServer.dl
 C:\Projects\Clarika\TestClarika\DataModel\bin\Debug\DataEntity.pdb
 C:\Projects\Clarika\TestClarika\DataModel\bin\Debug\EntityFramework.xml
 C:\Projects\Clarika\TestClarika\DataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\Clarika\TestClarika\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
 C:\Projects\Clarika\TestClarika\DataModel\obj\Debug\DataModel.dll
 C:\Projects\Clarika\TestClarika\DataModel\obj\Debug\DataModel.pdb

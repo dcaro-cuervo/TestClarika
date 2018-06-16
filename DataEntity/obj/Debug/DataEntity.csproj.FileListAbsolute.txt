@@ -1,5 +1,4 @@
 C:\Projects\Clarika\TestClarika\DataEntity\bin\Debug\DataEntity.dll
 C:\Projects\Clarika\TestClarika\DataEntity\bin\Debug\DataEntity.pdb
-C:\Projects\Clarika\TestClarika\DataEntity\obj\Debug\DataEntity.csprojResolveAssemblyReference.cache
 C:\Projects\Clarika\TestClarika\DataEntity\obj\Debug\DataEntity.dll
 C:\Projects\Clarika\TestClarika\DataEntity\obj\Debug\DataEntity.pdb

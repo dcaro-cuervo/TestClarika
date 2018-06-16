@@ -14,7 +14,7 @@ namespace Business
 
         void DeleteQuotation(Quotation quotation);
 
-        IEnumerable<Quotation> GetQuotations();
+        IEnumerable<Quotation> GetQuotations(string fieldToSearch);
 
         Quotation GetQuotationById(int quotationId);
     }

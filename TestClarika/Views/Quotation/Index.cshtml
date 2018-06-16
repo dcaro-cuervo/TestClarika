@@ -1,0 +1,101 @@
+﻿@model IEnumerable<TestClarika.Models.QuotationDTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <span>Buscar:</span>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        @using (Html.BeginForm("Index", "Quotation", FormMethod.Get, new { DefaultButton = "submit_btn", id = "Formbeg" }))
+        {
+            @Html.TextBox("search")<br />
+            <input type="submit" name="btnSubmit" id="submit_btn" value="Search" style="display: none;"/>
+        }
+    </div>
+    <div class="col-md-8">
+        <p>
+            @Html.ActionLink("Crear", "Configuration", null, new { @class = "btn btn-primary " })
+        </p>
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroPoliza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoSeguro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FormaPago)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaVencimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaCotizacion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroPoliza)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoSeguro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FormaPago)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaVencimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaCotizacion)
+        </td>                
+    </tr>
+}
+
+</table>
+<div class="row">
+    <div class="col-md-6"></div>
+    <div>        
+        <label>Total de registros: @((Model.Where(x => x.Activa).Any()) ? Model.Where(x => x.Activa).Count() : 0)</label>
+    </div>    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $("#Formbeg").keypress(function (e) {
+                keycode = e.keyCode || e.charCode || e.which //for cross browser
+                if (keycode == 13)    //keyCode for enter key
+                {
+                    var defaultbutton = $(this).attr("DefaultButton");
+                    $("#" + defaultbutton).click();
+                    return false;
+                }
+            });
+
+            $('#search').blur(function () {
+                if ($(this).val().length > 0) {
+                    $("#submit_btn").click();
+                    return false;
+                }
+            });
+        });
+</script>
